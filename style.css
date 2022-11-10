@@ -1,5 +1,5 @@
 :root {
-  --var-color-one: #f53c30;
+  --var-color-one: #d1d1d1;
   --var-color-two: #161616;
 }
 
@@ -21,6 +21,20 @@ html,
 body {
   background-color: var(--var-color-one);
   height: 2000px;
+}
+
+canvas {
+  position: fixed;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.project-image {
+  opacity: 0%;
+  position: absolute;
+  top: -100%;
+  pointer-events: none;
+  user-select: none;
 }
 
 h1 {
